@@ -71,7 +71,7 @@ class HED(nn.Module):
             """ Mapping compose. """
             a1, b1 = m1
             a2, b2 = m2
-            return a1 * b1, a1 * b2 + b1
+            return a1 * a2, a1 * b2 + b1
 
         def deconv_map(kernel_h, stride_h, pad_h):
             """ Deconvolution coordinates mapping. """
